@@ -4,14 +4,20 @@ export function PersonalDataForm() {
   return (
     <form aria-label="form">
       <div className='form-container'>
-        <label htmlFor="name">Your name:</label>
-        <input type="text" id="name"/>
+        <div>
+          <label htmlFor="name">Your name:</label>
+          <input type="text" id="name"/>
+        </div>
 
-        <label htmlFor="lastName">Your last name:</label>
-        <input type="text" id="lastName"/>
+        <div>
+          <label htmlFor="lastName">Your last name:</label>
+          <input type="text" id="lastName"/>
+        </div>
 
-        <label htmlFor="birthDate">Select your birth date:</label>
-        <input type="date" id="birthDate"/>
+        <div>
+          <label htmlFor="birthDate">Select your birth date:</label>
+          <input type="date" id="birthDate"/>
+        </div>
       </div>
 
       <div className='form-container'>
@@ -54,7 +60,7 @@ export function PersonalDataForm() {
       </div>
 
       <div className="button-container">
-        <button type="submit">Access</button>
+        <button type="submit">Next</button>
       </div>
     </form>
   )
