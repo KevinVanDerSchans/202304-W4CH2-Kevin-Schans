@@ -4,19 +4,26 @@ export function AccessDataForm() {
   return (
     <form aria-label="form">
       <div className='form-container'>
-        <label htmlFor="userName">Username:</label>
-        <input type="text" id="userName" required/>
 
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" required/>
+        <div>
+          <label htmlFor="userName">Username:</label>
+          <input type="text" id="userName" required/>
+        </div>
 
-        <label htmlFor="repeatPassword">Repeat your password:</label>
-        <input type="password" id="repeatPassword" required/>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" required/>
+        </div>
+
+        <div>
+          <label htmlFor="repeatPassword">Repeat your password:</label>
+          <input type="password" id="repeatPassword" required/>
+        </div>
       </div>
 
       <div className='form-container'>
+        <p>Select your type account:</p>
         <select id="selectAccountType">
-          Select your type account:
           <option value="personal">Personal</option>
           <option value="pro">Pro</option>
           <option value="business">Business</option>
