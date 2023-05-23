@@ -54,7 +54,7 @@ export function PersonalDataForm() {
       </div>
 
       <div className="button-container">
-        <button type="submit">Send</button>
+        <button type="submit">Access</button>
       </div>
     </form>
   )
